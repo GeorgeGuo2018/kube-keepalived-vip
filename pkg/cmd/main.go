@@ -75,6 +75,7 @@ var (
 		//            https://github.com/cloudnativelabs/kube-router/issues/544
 		// And kube-proxy running in IPVS mode also sets conn_reuse_mode to 0.
 		"net/ipv4/vs/conn_reuse_mode": 0,
+		"net/ipv4/conf/all/rp_filter": 0,
 	}
 
 	vrid = flags.Int("vrid", 50,
